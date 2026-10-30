@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Example Tabs</title>
+
+    <meta
+        name="description"
+        content="Responsive documentation-style code example tabs with synchronized tabs and copy functionality."
+    >
+
+    <meta name="author" content="MetaSkillGroup">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <div class="brand">
+                <div class="brand-logo">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M8 4 3 12l5 8M16 4l5 8-5 8M14 3l-4 18"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+
+                <div>
+                    <h1>CodeTabs</h1>
+                    <p>Documentation examples</p>
+                </div>
+            </div>
+
+            <div class="header-badge">
+                Vanilla JavaScript
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="main-container">
+
+        <section class="hero">
+            <span class="eyebrow">CODE EXAMPLES</span>
+
+            <h2>Code samples that stay in sync.</h2>
+
+            <p>
+                Switch a tab once and every matching code example updates
+                automatically. Copy the original code with one click.
+            </p>
+        </section>
+
+
+        <!-- GROUP 1 : PACKAGE MANAGER -->
+        <section class="demo-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">01</span>
+                    <h3>Package Manager</h3>
+                </div>
+
+                <p>
+                    Choose your preferred package manager.
+                </p>
+            </div>
+
+
+            <div class="code-card" data-group="package-manager">
+
+                <div class="code-header">
+
+                    <div class="tabs">
+
+                        <button
+                            class="tab active"
+                            data-tab="npm"
+                        >
+                            npm
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="yarn"
+                        >
+                            yarn
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="pnpm"
+                        >
+                            pnpm
+                        </button>
+
+                    </div>
+
+                    <div class="code-actions">
+                        <span class="file-name">
+                            install.sh
+                        </span>
+
+                        <button class="copy-button">
+                            Copy
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="code-content">
+
+                    <pre
+                        class="code-block"
+                        data-code="npm"
+                        data-line-numbers
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="yarn"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="pnpm"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GROUP 2 : LANGUAGE -->
+        <section class="demo-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">02</span>
+                    <h3>Frontend Example</h3>
+                </div>
+
+                <p>
+                    Switch between HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+
+            <div class="code-card" data-group="language">
+
+                <div class="code-header">
+
+                    <div class="tabs">
+
+                        <button
+                            class="tab active"
+                            data-tab="html"
+                        >
+                            HTML
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="css"
+                        >
+                            CSS
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="js"
+                        >
+                            JS
+                        </button>
+
+                    </div>
+
+                    <div class="code-actions">
+                        <span class="file-name">
+                            index.html
+                        </span>
+
+                        <button class="copy-button">
+                            Copy
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="code-content">
+
+                    <pre
+                        class="code-block"
+                        data-code="html"
+                        data-line-numbers
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="css"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="js"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GROUP 3 : PACKAGE MANAGER AGAIN -->
+        <section class="demo-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">03</span>
+                    <h3>Run the Project</h3>
+                </div>
+
+                <p>
+                    This package-manager group stays synchronized.
+                </p>
+            </div>
+
+
+            <div class="code-card" data-group="package-manager">
+
+                <div class="code-header">
+
+                    <div class="tabs">
+
+                        <button
+                            class="tab active"
+                            data-tab="npm"
+                        >
+                            npm
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="yarn"
+                        >
+                            yarn
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="pnpm"
+                        >
+                            pnpm
+                        </button>
+
+                    </div>
+
+                    <div class="code-actions">
+                        <span class="file-name">
+                            terminal.sh
+                        </span>
+
+                        <button class="copy-button">
+                            Copy
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="code-content">
+
+                    <pre
+                        class="code-block"
+                        data-code="npm"
+                        data-line-numbers
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="yarn"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="pnpm"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GROUP 4 : LANGUAGE AGAIN -->
+        <section class="demo-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">04</span>
+                    <h3>API Example</h3>
+                </div>
+
+                <p>
+                    Language selection is synchronized across this group.
+                </p>
+            </div>
+
+
+            <div class="code-card" data-group="language">
+
+                <div class="code-header">
+
+                    <div class="tabs">
+
+                        <button
+                            class="tab active"
+                            data-tab="html"
+                        >
+                            HTML
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="css"
+                        >
+                            CSS
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-tab="js"
+                        >
+                            JS
+                        </button>
+
+                    </div>
+
+                    <div class="code-actions">
+                        <span class="file-name">
+                            app.js
+                        </span>
+
+                        <button class="copy-button">
+                            Copy
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="code-content">
+
+                    <pre
+                        class="code-block"
+                        data-code="html"
+                        data-line-numbers
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="css"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                    <pre
+                        class="code-block"
+                        data-code="js"
+                        data-line-numbers
+                        hidden
+                    ><code></code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>
+            Built with HTML, CSS and Vanilla JavaScript.
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
